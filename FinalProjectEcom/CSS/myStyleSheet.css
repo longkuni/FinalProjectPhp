@@ -1,0 +1,116 @@
+/* ------------------------------------- BODY --------------------------------------------*/
+body {
+    background-color: #FDEEDF;
+}
+
+
+
+
+/* ------------------------------------- Nav Bar --------------------------------------------*/
+
+/* everything*/
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: darkslateblue;
+    font-family: 'Zen Dots', cursive;
+}
+
+.logo
+{
+    color: antiquewhite;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.nav-links li{
+    list-style: none;
+    padding: 15px;
+}
+
+.nav-links li:hover {
+    list-style: none;
+    background-color: mediumpurple;
+    border-radius: 3px;
+}
+
+.nav-links a 
+{
+    color: antiquewhite;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.collectionList
+{
+    display:none;
+}
+
+/*display dropdown menu*/
+.nav-links li:hover .collectionList {
+    display: block;
+    position: absolute;
+    background-color: mediumpurple;
+    margin: 15px 0px 0px 15px;
+}
+
+
+.nav-links li:hover .collectionList ul {
+    border-radius: 0;
+    background:transparent;
+    text-align:center;
+}
+
+
+.nav-links li:hover .collectionList ul li {
+    display: block;
+    width: 150px;
+    padding: 10px;
+    margin:10px;
+    border-radius: 0;
+    background: transparent;
+    text-align: start;
+}
+
+.nav-links li:hover .collectionList ul li a:hover 
+{
+    color: #440090;
+}
+
+/*
+.settingIcon {
+    width: 30px;
+    height: 5px;
+    background-color: antiquewhite;
+    margin: 5px;
+}*/
+
+/*------------------------------------------ HOME PAGE -----------------------------------------------------*/
+h1
+{
+    margin-left:200px;
+}
+
+.homePage
+{
+    margin:auto;
+    height:500px;
+}
